@@ -6,7 +6,32 @@
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "一针塘",
     "navigationBarTextStyle":"black"
+  },
+  "tabBar":{
+    "color": "#666",
+    "selectedColor": "#DE443A",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "预约",
+        "iconPath": "images/order.png",
+        "selectedIconPath": "images/order.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "我的",
+        "iconPath": "images/mine.png",
+        "selectedIconPath": "images/mine.png"
+      }
+    ]
   }
 }
