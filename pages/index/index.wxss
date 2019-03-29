@@ -1,10 +1,11 @@
 .container {
   background-color: #fff;
 }
+
 .container-search {
   padding: 24rpx 30rpx;
 }
-.search-box {
+  .search-box {
     display: flex;
     align-items: center;
     height: 64rpx;
@@ -19,9 +20,42 @@
       margin-left: 10rpx;
     }
 
+.container-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+  .menu__xue {
+    background: url(https://i.loli.net/2019/03/29/5c9e3474960e8.png) no-repeat center;
+    background-size: contain;
+    width: 100rpx;
+    height: 288rpx;
+  }
+  .menu__mai {
+    background: url(https://i.loli.net/2019/03/29/5c9e3474958e3.png) no-repeat center;
+    background-size: contain;
+    width: 100rpx;
+    height: 288rpx;
+  }
+  .menu__hui {
+    background: url(https://i.loli.net/2019/03/29/5c9e347495176.png) no-repeat center;
+    background-size: contain;
+    width: 100rpx;
+    height: 287rpx;
+  }
+  .menu__xin {
+    background: url(https://i.loli.net/2019/03/29/5c9e347496112.png) no-repeat center;
+    background-size: contain;
+    width: 100rpx;
+    height: 286rpx;
+  }
 
-
-
+/* 
+<img src="https://i.loli.net/2019/03/29/5c9e347495176.png" alt="hui.png" title="hui.png" />
+<img src="https://i.loli.net/2019/03/29/5c9e347496112.png" alt="xin.png" title="xin.png" />
+<img src="https://i.loli.net/2019/03/29/5c9e3474958e3.png" alt="mai.png" title="mai.png" />
+<img src="https://i.loli.net/2019/03/29/5c9e3474960e8.png" alt="xue.png" title="xue.png" />
+*/
 
 
 

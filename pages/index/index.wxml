@@ -6,7 +6,12 @@
   </view>
 </view>
 
-
+<view class="container container-menu">
+  <view class="menu__xue"></view>
+  <view class="menu__mai"></view>
+  <view class="menu__hui"></view>
+  <view class="menu__xin"></view>
+</view>
 
 
 
