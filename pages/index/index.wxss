@@ -1,3 +1,6 @@
+page {
+  background: #f4f4f4;
+}
 .container {
   background-color: #fff;
 }
@@ -24,6 +27,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  padding-bottom: 24rpx;
 }
   .menu__xue {
     background: url(https://i.loli.net/2019/03/29/5c9e3474960e8.png) no-repeat center;
@@ -50,12 +54,25 @@
     height: 286rpx;
   }
 
-/* 
-<img src="https://i.loli.net/2019/03/29/5c9e347495176.png" alt="hui.png" title="hui.png" />
-<img src="https://i.loli.net/2019/03/29/5c9e347496112.png" alt="xin.png" title="xin.png" />
-<img src="https://i.loli.net/2019/03/29/5c9e3474958e3.png" alt="mai.png" title="mai.png" />
-<img src="https://i.loli.net/2019/03/29/5c9e3474960e8.png" alt="xue.png" title="xue.png" />
-*/
+.container-swiper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 300rpx;
+
+  margin-top: 10rpx;
+}
+.swiper-entry {
+  width: 700rpx;
+  height: 257rpx;
+}
+  
+    .slide-image {
+      width: 100%;
+      height: 100%;
+    }
 
 
 

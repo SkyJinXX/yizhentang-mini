@@ -13,7 +13,15 @@
   <view class="menu__xin"></view>
 </view>
 
-
+<view class="container container-swiper">
+  <swiper class="swiper-entry" indicator-dots="{{true}}" autoplay="{{true}}">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item class="swiper-entry__item">
+        <image src="{{item}}" class="slide-image" mode="widthFix"/>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
 
 
 
