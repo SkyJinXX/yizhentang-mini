@@ -1,6 +1,8 @@
-<!--logs.wxml-->
-<view class="container log-list">
-  <block wx:for="{{logs}}" wx:for-item="log">
-    <text class="log-item">{{index + 1}}. {{log}}</text>
-  </block>
+<!-- 搜索框（备用） -->
+<view class="container container-search">
+  <view class="search-box">
+    <icon type="search" size="18"/>
+    <input placeholder="请输入关键词，例如＃产后催乳＃" class="search" confirm-type="search"/>
+  
+  </view>
 </view>

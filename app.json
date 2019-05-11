@@ -23,12 +23,6 @@
       },
       {
         "pagePath": "pages/logs/logs",
-        "text": "预约",
-        "iconPath": "images/order.png",
-        "selectedIconPath": "images/order.png"
-      },
-      {
-        "pagePath": "pages/logs/logs",
         "text": "我的",
         "iconPath": "images/mine.png",
         "selectedIconPath": "images/mine.png"

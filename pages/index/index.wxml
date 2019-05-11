@@ -1,26 +1,52 @@
-<view class="container container-search">
-  <view class="search-box">
-    <icon type="search" size="18"/>
-    <input placeholder="请输入关键词，例如＃产后催乳＃" class="search" confirm-type="search"/>
-  
+<view class="container container--features">
+  <view class="feature">
+    <view class="icon--large" style="background-image: url(https://i.loli.net/2019/05/11/5cd6ce1e00ac9.png);"></view>
+    <view class="content">
+      <view class="content__title">健康记录</view>
+      <view class="content__describe">时刻记录宝妈身心变化</view>
+    </view>
+
+    <view class="arrow"></view>
+  </view>
+  <view class="feature">
+    <view class="icon--large" style="background-image: url(https://i.loli.net/2019/05/11/5cd6ce1e1baec.png);"></view>
+    <view class="content">
+      <view class="content__title">在线预约</view>
+      <view class="content__describe">医院/社区/家庭 随心就诊</view>
+    </view>
+
+    <view class="arrow"></view>
+  </view>
+
+  <view class="feature-box">
+    <view class="feature">
+      <view class="icon--small" style="background-image: url(https://i.loli.net/2019/05/11/5cd6ce5ff2a1e.png);"></view>
+      <view class="content">
+        <view class="content__title--small">找中医</view>
+        <view class="content__describe--small">中医专家来答疑</view>
+      </view>
+    </view>
+    <view class="feature">
+      <view class="icon--small" style="background-image: url(https://i.loli.net/2019/05/11/5cd6ce1e1c361.png);"></view>
+      <view class="content">
+        <view class="content__title--small">督脉熏蒸</view>
+        <view class="content__describe--small">产后修复新方法</view>
+      </view>
+    </view>
   </view>
 </view>
 
-<view class="container container-menu">
-  <view class="menu__xue"></view>
-  <view class="menu__mai"></view>
-  <view class="menu__hui"></view>
-  <view class="menu__xin"></view>
-</view>
-
-<view class="container container-swiper">
-  <swiper class="swiper-entry" indicator-dots="{{true}}" autoplay="{{true}}">
-    <block wx:for="{{imgUrls}}">
-      <swiper-item class="swiper-entry__item">
-        <image src="{{item}}" class="slide-image" mode="widthFix"/>
-      </swiper-item>
-    </block>
-  </swiper>
+<view class="container container--menu">
+  <scroll-view class="menu" scroll-x>
+    <view class="menu__item" style="background-image: url(https://i.loli.net/2019/05/11/5cd6ce6008a20.png);" alt="中医科普"></view>
+    <view class="menu__item" style="background-image: url(https://i.loli.net/2019/05/11/5cd6ce1e0b112.png);" alt="妈妈课堂"></view>
+    <view class="menu__item" style="background-image: url(https://i.loli.net/2019/05/11/5cd6ce1e255fa.png);" alt="孕愈商城"></view>
+    <view class="menu__item" style="background-image: url(https://i.loli.net/2019/05/11/5cd6ce1e25f4a.png);" alt="产后饮食"></view>
+    <view class="menu__item" style="background-image: url(https://i.loli.net/2019/05/11/5cd6ce1e011af.png);" alt="健康之声"></view>
+    <view class="menu__item" style="background-image: url(https://i.loli.net/2019/05/11/5cd6ce1e24d5f.png);" alt="有奖征集"></view>
+    <view class="menu__item" style="background-image: url(https://i.loli.net/2019/05/11/5cd6ce1e01b80.png);" alt="妈妈体质"></view>
+    <view class="menu__item" style="background-image: url(https://i.loli.net/2019/05/11/5cd6ce1e0bb98.png);" alt="妈妈心情"></view>
+  </scroll-view>
 </view>
 
 
@@ -31,8 +57,19 @@
 
 
 
-
-
+<!-- <img src="https://i.loli.net/2019/05/11/5cd6ce1e00ac9.png" alt="健康记录icon.png" title="健康记录icon.png" />
+<img src="https://i.loli.net/2019/05/11/5cd6ce1e01b80.png" alt="妈妈体质.png" title="妈妈体质.png" />
+<img src="https://i.loli.net/2019/05/11/5cd6ce1e0b112.png" alt="妈妈课堂.png" title="妈妈课堂.png" />
+<img src="https://i.loli.net/2019/05/11/5cd6ce1e0bb98.png" alt="妈妈心情.png" title="妈妈心情.png" />
+<img src="https://i.loli.net/2019/05/11/5cd6ce1e011af.png" alt="健康之声.png" title="健康之声.png" />
+<img src="https://i.loli.net/2019/05/11/5cd6ce1e1baec.png" alt="在线预约icon.png" title="在线预约icon.png" />
+<img src="https://i.loli.net/2019/05/11/5cd6ce1e1c361.png" alt="督脉熏蒸icon.png" title="督脉熏蒸icon.png" />
+<img src="https://i.loli.net/2019/05/11/5cd6ce1e24d5f.png" alt="有奖征集.png" title="有奖征集.png" />
+<img src="https://i.loli.net/2019/05/11/5cd6ce1e25f4a.png" alt="产后饮食.png" title="产后饮食.png" />
+<img src="https://i.loli.net/2019/05/11/5cd6ce1e255fa.png" alt="孕愈商城.png" title="孕愈商城.png" />
+<img src="https://i.loli.net/2019/05/11/5cd6ce5ff2a1e.png" alt="找中医icon.png" title="找中医icon.png" />
+<img src="https://i.loli.net/2019/05/11/5cd6ce6008a20.png" alt="中医科普.png" title="中医科普.png" />
+-->
 
 
 
