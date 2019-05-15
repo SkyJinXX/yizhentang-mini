@@ -34,5 +34,5 @@
     .switch-button.active {
         color: white;
         background-color: #910000;
-        border: none;
+        border: 1px solid #910000;
     }
