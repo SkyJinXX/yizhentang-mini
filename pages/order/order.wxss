@@ -1,0 +1,38 @@
+.top-bar {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 20rpx;
+}
+    .search-box {
+        display: flex;
+        align-items: center;
+        height: 64rpx;
+        width: 100%;
+        padding: 0 16rpx;
+        border-radius: 17px;
+        border: 1px solid #e6e6e6;
+
+        font-size: 26rpx;
+    }
+        .search {
+        width: -webkit-fill-available;
+        margin-left: 10rpx;
+        }
+
+.switch-bar {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+    .switch-button {
+        padding: 10rpx 30rpx;
+        font-size: 28rpx;
+        color: #999;
+        border: 1px solid #999;
+        border-radius: 50rpx;
+    }
+    .switch-button.active {
+        color: white;
+        background-color: #910000;
+        border: none;
+    }

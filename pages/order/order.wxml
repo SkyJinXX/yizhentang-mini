@@ -1,0 +1,16 @@
+<view class="top-bar">
+    <!-- <view class="location">
+        <image class="location__icon" src="" />
+        <text class="location__city">{{city}}</text>
+    </view> -->
+    <view class="search-box">
+        <icon type="search" size="18" />
+        <input placeholder="请输入关键词搜索，＃医生姓名＃等" class="search" confirm-type="search" />
+    </view>
+</view>
+
+<view class="switch-bar">
+    <view class="switch-button{{status=='outpatient' ? ' active' : ''}}" bindtap="switch" id="outpatient">一真门诊</view>
+    <view class="switch-button{{status=='community' ? ' active' : ''}}" bindtap="switch" id="community">医院社区就诊</view>
+    <view class="switch-button{{status=='on-site' ? ' active' : ''}}" bindtap="switch" id="on-site">上门服务</view>
+</view>

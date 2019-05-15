@@ -1,5 +1,5 @@
 <view class="container container--features">
-  <view class="feature">
+  <view id="record" class="feature" bind:tap="navigateTo">
     <view class="icon--large" style="background-image: url(https://i.loli.net/2019/05/11/5cd6ce1e00ac9.png);"></view>
     <view class="content">
       <view class="content__title">健康记录</view>
@@ -8,7 +8,7 @@
 
     <view class="arrow"></view>
   </view>
-  <view class="feature">
+  <view id="order" class="feature" bind:tap="navigateTo">
     <view class="icon--large" style="background-image: url(https://i.loli.net/2019/05/11/5cd6ce1e1baec.png);"></view>
     <view class="content">
       <view class="content__title">在线预约</view>
@@ -63,7 +63,12 @@
   </view>
 </view>
 
-
+<view class="authorize-background" wx:if="{{!hasUserInfo && canIUse}}">
+  <view class="authorize-modal">
+    <text class="authorize-text">给老娘授权</text>
+    <button open-type="getUserInfo" bindgetuserinfo="getUserInfo" class="authorize-button">授权</button>
+  </view>
+</view>
 
 
 
