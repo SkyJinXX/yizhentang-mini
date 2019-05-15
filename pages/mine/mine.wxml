@@ -1,0 +1,39 @@
+<view class="info-card">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo" class="get-userinfo">登陆</button>
+    <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+</view>
+
+<view class="point-value-container">
+    <view class="point-value">
+        <text class="point-value-text">可用积分</text>
+        <view class="point-value-value">0</view>
+    </view>
+    <view class="point-value-store">
+        <text class="point-value-text">积分商城</text>
+        <view class="point-value-store-icon">></view>
+    </view>
+</view>
+
+<view class="info-menu">
+    <view class="info-menu__item">
+        <view class="info-item-text">我的健康记录</view>
+        <view class="info-item-arrow"></view>
+    </view>
+    <view class="info-menu__item">
+        <view class="info-item-text">统计图表</view>
+        <view class="info-item-arrow"></view>
+    </view>
+    <view class="info-menu__item">
+        <view class="info-item-text">我的订单</view>
+        <view class="info-item-arrow"></view>
+    </view>
+    <view class="info-menu__item">
+        <view class="info-item-text">咨询与售后</view>
+        <view class="info-item-arrow"></view>
+    </view>
+    <view class="info-menu__item">
+        <view class="info-item-text">我要反馈</view>
+        <view class="info-item-arrow"></view>
+    </view>
+</view>

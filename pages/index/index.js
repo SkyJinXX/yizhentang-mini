@@ -9,6 +9,9 @@ Page({
       '../../images/healthEntry.png'
     ]
   },
+  test () {
+    console.log('test ok');
+  }
 
 
 
