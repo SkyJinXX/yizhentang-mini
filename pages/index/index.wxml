@@ -19,14 +19,14 @@
   </view>
 
   <view class="feature-box">
-    <view class="feature">
+    <view id="consult" class="feature" bind:tap="navigateTo">
       <view class="icon--small" style="background-image: url(https://i.loli.net/2019/05/11/5cd6ce5ff2a1e.png);"></view>
       <view class="content">
         <view class="content__title--small">找中医</view>
         <view class="content__describe--small">中医专家来答疑</view>
       </view>
     </view>
-    <view class="feature">
+    <view id="dumai" class="feature" bind:tap="navigateTo">
       <view class="icon--small" style="background-image: url(https://i.loli.net/2019/05/11/5cd6ce1e1c361.png);"></view>
       <view class="content">
         <view class="content__title--small">督脉熏蒸</view>
@@ -38,7 +38,7 @@
 
 <view class="container container--menu">
   <scroll-view class="menu" scroll-x>
-    <view class="menu__item" style="background-image: url(https://i.loli.net/2019/05/12/5cd7ac0542074.png);" alt="中医科普"></view>
+    <view class="menu__item" style="background-image: url(https://i.loli.net/2019/05/12/5cd7ac0542074.png);" alt="中医科普" bind:tap="showOA"></view>
     <view class="menu__item" style="background-image: url(https://i.loli.net/2019/05/12/5cd7ac0520922.png);" alt="妈妈课堂"></view>
     <view class="menu__item" style="background-image: url(https://i.loli.net/2019/05/12/5cd7ac05409fe.png);" alt="孕愈商城"></view>
     <view class="menu__item" style="background-image: url(https://i.loli.net/2019/05/12/5cd7ac05411ba.png);" alt="产后饮食"></view>
@@ -70,7 +70,11 @@
   </view>
 </view>
 
-
+<view class="official-account-background" wx:if="{{ifShowOA}}" bind:tap="closeOA">
+  <view class="official-account-modal">
+    <official-account binderror="oaError"></official-account>
+  </view>
+</view>
 
 
 

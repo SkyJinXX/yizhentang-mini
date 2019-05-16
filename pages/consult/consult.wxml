@@ -1,0 +1,26 @@
+<view class="department-container">
+    <view class="department-choose-box">
+        <image class="department-choose-icon" src="../../images/departmentChoose.png" mode="widthFix" />
+        <view class="department-choose-title">选择科室</view>
+    </view>
+    <view class="department-box">
+        <view class="department">妇产科</view>
+        <view class="arrow"></view>
+    </view>
+</view>
+
+<view class="doctor-info-container">
+    <image class="doctor-avatar" src="../../images/doctorAvatar.jpeg" mode="widthFix" />
+    <view class="doctor-info-box">
+        <text class="doctor-name">邬元曦</text>
+        <view>
+            <text class="doctor-department">中医妇科</text>
+            <text class="doctor-position">助理研究员</text>
+        </view>
+        <view >
+            <text class="doctor-hot-value">推荐热度：4.2</text>
+            <image class="doctor-hot-icon" src="../../images/hot.png" mode="widthFix" />
+        </view>
+        <text class="doctor-satisfaction">服务满意度：暂无</text>
+    </view>
+</view>

@@ -104,6 +104,7 @@ page {
             background-repeat: no-repeat;
             display: inline-block;
             margin-right: 20rpx;
+            overflow: hidden;
         }
 
 /*
@@ -151,7 +152,7 @@ page {
 ..##.......##...##.....##.....##.##.....##.##.....##.##.....##.##...........##...##...##.....
 .##....................##.....##..#######..########..##.....##.########..............##......
 */
-.authorize-background {
+.authorize-background,.official-account-background {
     position: absolute;
     top: 0;
     left: 0;
@@ -178,7 +179,17 @@ page {
         .authorize-text {
             text-align: center;
         }
+    .official-account-modal {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
 
+        width: 300px;
+        height: 84px;
+        background-color: #fff;
+        border-radius: 10rpx;
+        overflow: hidden;
+    }
 
 
 

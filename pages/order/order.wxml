@@ -14,3 +14,74 @@
     <view class="switch-button{{status=='community' ? ' active' : ''}}" bindtap="switch" id="community">医院社区就诊</view>
     <view class="switch-button{{status=='on-site' ? ' active' : ''}}" bindtap="switch" id="on-site">上门服务</view>
 </view>
+
+<view class="outpatient-container" wx:if="{{status=='outpatient'}}">
+    <view class="input-row">
+        <text class="label"><text class="important">* </text>姓名：</text>
+        <input placeholder="请输入姓名" class="record-input" confirm-type="next" />
+    </view>
+    <view class="input-row">
+        <text class="label"><text class="important">* </text>时间：</text>
+        <input placeholder="请输入预约时间" class="record-input" confirm-type="next" />
+    </view>
+    <view class="input-row">
+        <text class="label"><text class="important">* </text>确定医生：</text>
+        <radio-group class="record-radio-group">
+            <label class="record-radio-label">
+                <radio value="0" /> 匡泽红
+            </label>
+            <label class="record-radio-label">
+                <radio value="1" /> 邬元曦
+            </label>
+            <label class="record-radio-label">
+                <radio value="2" /> 周晓凤
+            </label>
+            <label class="record-radio-label">
+                <radio value="3" /> 潘珍珍
+            </label>
+            <label class="record-radio-label">
+                <radio value="4" /> 劳幼红
+            </label>
+            <label class="record-radio-label">
+                <radio value="5" /> 朱勤
+            </label>
+        </radio-group>
+    </view>
+    <view class="input-row">
+        <text class="label"><text class="important">* </text>确定地点：</text>
+        <radio-group class="record-radio-group">
+            <label class="record-radio-label">
+                <radio value="0" /> 杭州一真堂中西医结合门诊部
+            </label>
+        </radio-group>
+    </view>
+    <view class="input-row">
+        <text class="label"><text class="important">* </text>挂号费：</text>
+        <radio-group class="record-radio-group">
+            <label class="record-radio-label">
+                <radio value="0" /> ￥20.00
+            </label>
+        </radio-group>
+    </view>
+    <button class="submit" type="defualt" bindtap="order">
+        立即预约
+    </button>
+</view>
+
+<view class="on-site-container" wx:if="{{status=='on-site'}}">
+    <view class="basic-rules-container">
+        <view class="basic-rules-title">基本事项</view>
+        <text class="basic-rule">1.对于熏蒸床及其附属物品因自然属性或合理使用而导致的损耗，用户应及时通知杭州一真器械医疗有限公司(下文简称公司)修复.</text>
+        <text class="basic-rule">2.因用户违反使用说明方法使用租赁物造成的损坏，由用户负责维修或赔偿。</text>
+        <text class="basic-rule">3.除用户公司双方另有约定以外，用户不可将熏蒸床转租给他人。</text>
+        <text class="basic-rule">4.用户擅自拆改变动或损坏熏蒸床主体结构的，应承担相应的赔偿责任。</text>
+        <text class="basic-rule">5.租赁期满或合同解除后，用户应按照原状返还熏蒸床及其附属物品。</text>
+    </view>
+    <view class="order-process-container">
+        <view class="order-process-title">预约流程</view>
+        <image src="../../images/flowChart.jpg" class="order-process" mode="widthFix"/>
+    </view>
+    <button class="submit" type="defualt" bindtap="order">
+        立即预约
+    </button>
+</view>

@@ -9,7 +9,8 @@ Page({
       '../../images/healthEntry.png'
     ],
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    ifShowOA: false
   },
   onLoad: function () {
     if (app.globalData.userInfo) {
@@ -39,6 +40,19 @@ Page({
   navigateTo: e => {
     let pageSrc = `../${e.currentTarget.id}/${e.currentTarget.id}`;
     wx.navigateTo({ url: pageSrc });
+  },
+  showOA: function (e) {
+    this.setData({
+      ifShowOA: true
+    })
+  },
+  closeOA: function (e) {
+    this.setData({
+      ifShowOA: false
+    })
+  },
+  oaError: e => {
+    console.log(e);
   },
   test () {
     console.log('test ok');

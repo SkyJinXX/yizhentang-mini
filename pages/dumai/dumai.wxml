@@ -1,0 +1,18 @@
+<image src="../../images/dumaiPart1.jpg" class="dumai-intro" mode="widthFix"/>
+<view class="input-row">
+    <text class="label"><text class="important">* </text>预约选择：</text>
+    <radio-group class="record-radio-group">
+        <label class="record-radio-label">
+            <radio value="dumai" /> 督脉熏蒸
+        </label>
+        <label class="record-radio-label">
+            <radio value="tuina" /> 推拿
+        </label>
+        <label class="record-radio-label">
+            <radio value="zhenjiu" /> 针灸
+        </label>
+    </radio-group>
+</view>
+<button class="submit" type="defualt" bindtap="order">
+    预约
+</button>

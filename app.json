@@ -4,8 +4,9 @@
     "pages/logs/logs",
     "pages/mine/mine",
     "pages/record/record",
-    "pages/order",
-    "pages/order/order"
+    "pages/order/order",
+    "pages/dumai/dumai",
+    "pages/consult/consult"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -18,7 +19,8 @@
     "color": "#666",
     "selectedColor": "#DE443A",
     "backgroundColor": "#fff",
-    "list": [{
+    "list": [
+      {
         "pagePath": "pages/index/index",
         "text": "首页",
         "iconPath": "images/home.png",
