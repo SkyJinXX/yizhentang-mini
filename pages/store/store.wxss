@@ -1,0 +1,25 @@
+page {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-end;
+    box-sizing: border-box;
+    padding: 40rpx;
+    
+}
+
+
+.title-container {
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+
+    margin-bottom: 60rpx;
+}
+    .title {
+        width: 601rpx;
+    }
+.commodity {
+    margin-bottom: 20rpx; 
+}

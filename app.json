@@ -7,7 +7,10 @@
     "pages/order/order",
     "pages/dumai/dumai",
     "pages/consult/consult",
-    "pages/class/class"
+    "pages/class/class",
+    "pages/officialAccount/officialAccount",
+    "pages/store",
+    "pages/store/store"
   ],
   "window": {
     "backgroundTextStyle": "light",

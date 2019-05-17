@@ -1,0 +1,8 @@
+<view class="title-container">
+    <image class="title" src="../../images/title.png" mode="widthFix" />
+</view>
+<image class="commodity" src="../../images/commodity1.png" mode="widthFix" style="width: 631rpx;" bindtap="addCart" />
+<image class="commodity" src="../../images/commodity2.png" mode="widthFix" style="width: 684rpx;" bindtap="addCart"/>
+<image class="commodity" src="../../images/commodity3.png" mode="widthFix" style="width: 650rpx;" bindtap="addCart"/>
+<image class="commodity" src="../../images/commodity4.png" mode="widthFix" style="width: 683rpx;" bindtap="addCart"/>
+<image class="commodity" src="../../images/commodity5.png" mode="widthFix" style="width: 637rpx;" bindtap="addCart"/>
