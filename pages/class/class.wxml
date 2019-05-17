@@ -1,0 +1,12 @@
+<image class="title" src="../../images/classTitle.png" mode="widthFix" />
+
+<view class="content">
+    <text class="content__text">“e蒸孕愈”工作室联合一真堂不定期不定点的开展线下妈妈课堂，用户可在平台进行线上报名。</text>
+    <text class="content__text">妈妈课堂的內容包括中医科学坐月子、中医产后理疗——督脉熏蒸科普等等。目前开展的妈妈课堂多在各医院的孕妇学校进行，在孕期对妈妈们进行科学的宣教，提高其科学地进行产后恢复的意识。</text>
+</view>
+
+<view class="button-container">
+    <button class="submit" type="defualt" bindtap="submit">
+        立即报名
+    </button>
+</view>

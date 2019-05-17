@@ -1,0 +1,32 @@
+page {
+    background-color: #f4f4f4;
+}
+
+.title {
+    display: block;
+    width: 100%;
+    margin-bottom: 20rpx;
+}
+.content {
+    padding: 20rpx;
+    background-color: white;
+    margin-bottom: 20rpx;
+}
+    .content__text {
+        display: block;
+        font-size: 36rpx;
+        line-height: 50rpx;
+        text-indent: 60rpx;
+    }
+
+.button-container {
+    background-color: white;
+    height: 100%;
+    padding: 20rpx;
+}
+    .submit {
+        margin: 0 40rpx 0rpx;
+
+        background-color: #910000;
+        color: white;
+    }

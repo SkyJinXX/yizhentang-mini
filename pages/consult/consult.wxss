@@ -3,33 +3,33 @@ page {
     box-sizing: border-box;
 }
 
-.department-container {
+.bar {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     padding: 0 0rpx 20rpx;
     border-bottom: rgb(206, 202, 202) 1px solid;
-    margin-bottom: 10rpx;
-    position: relative;
+    margin-bottom: 20rpx;
 }
-    .department-choose-box {
+    .box-left {
         display: flex;
         flex-flow: row;
         align-items: center;
     }
-        .department-choose-icon {
+        .box-left__icon {
             width: 60rpx;
         }
-        .department-choose-title {
+        .box-left__text {
+            color: rgb(107, 107, 107);
             font-size: 30rpx;
             margin-left: 10rpx;
         }
-    .department-box {
+    .box-right {
         display: flex;
         flex-flow: row;
         align-items: center;
     }
-        .department {
+        .box-right__text {
             font-size: 34rpx;
             color: #999;
         }
@@ -42,22 +42,71 @@ page {
             margin-top: 20rpx;
             margin-left: 14rpx;
         }
-    /* .department-box::before {
-        content: '';
-        position: absolute;
-        left: 50%;
-        bottom: 0;
-        height: 1px;
-        width: 94%;
-        transform: translate(-50%);
-        background-color: rgb(206, 202, 202);
-    } */
 
 .doctor-info-container {
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
+    margin-bottom: 20rpx;
 }
     .doctor-avatar {
-        width: 140rpx;
+        width: 138rpx;
+        margin-right: 20rpx;
+        border-radius: 10rpx;
     }
+    .doctor-info-box {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+    }
+        .doctor-name {
+            font-size: 42rpx;
+            margin-bottom: 20rpx;
+        }
+        .doctor-info-text {
+            display: block;
+            margin-bottom: 10rpx;
+            color: rgb(204, 204, 204);
+            font-size: 28rpx;
+        }
+        .doctor-hot-icon {
+            width: 26rpx;
+        }
+
+.doctor-introduction-container {
+    margin-bottom: 40rpx;
+}
+    .doctor-introduction {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        color: #787878;
+        font-size: 28rpx;
+
+    }
+    .doctor-introduction.full {
+        display: block;
+    }
+
+.consult-container {
+
+}
+            .consult-icon {
+                width: 46rpx;
+            }
+    .consult-input {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10rpx;
+        font-size: 30rpx;
+        background-color: rgb(248, 248, 248);
+        /* border-bottom: 1px solid #999; */
+    }
+
+.submit {
+    margin: 40rpx 40rpx 0;
+
+    background-color: #910000;
+    color: white;
+}

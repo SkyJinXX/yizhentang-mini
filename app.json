@@ -6,7 +6,8 @@
     "pages/record/record",
     "pages/order/order",
     "pages/dumai/dumai",
-    "pages/consult/consult"
+    "pages/consult/consult",
+    "pages/class/class"
   ],
   "window": {
     "backgroundTextStyle": "light",

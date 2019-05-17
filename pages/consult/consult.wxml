@@ -1,10 +1,10 @@
-<view class="department-container">
-    <view class="department-choose-box">
-        <image class="department-choose-icon" src="../../images/departmentChoose.png" mode="widthFix" />
-        <view class="department-choose-title">选择科室</view>
+<view class="bar">
+    <view class="box-left">
+        <image class="box-left__icon" src="../../images/departmentChoose.png" mode="widthFix" />
+        <view class="box-left__text">选择科室</view>
     </view>
-    <view class="department-box">
-        <view class="department">妇产科</view>
+    <view class="box-right" bind:tap="choose">
+        <view class="box-right__text">妇产科</view>
         <view class="arrow"></view>
     </view>
 </view>
@@ -13,14 +13,36 @@
     <image class="doctor-avatar" src="../../images/doctorAvatar.jpeg" mode="widthFix" />
     <view class="doctor-info-box">
         <text class="doctor-name">邬元曦</text>
-        <view>
-            <text class="doctor-department">中医妇科</text>
-            <text class="doctor-position">助理研究员</text>
-        </view>
-        <view >
-            <text class="doctor-hot-value">推荐热度：4.2</text>
-            <image class="doctor-hot-icon" src="../../images/hot.png" mode="widthFix" />
-        </view>
-        <text class="doctor-satisfaction">服务满意度：暂无</text>
+        <text class="doctor-info-text">中医妇科 助理研究员</text>
+        <view class="doctor-hot-value doctor-info-text">推荐热度：4.2 <image class="doctor-hot-icon" src="../../images/hot.png" mode="widthFix" /></view>
+        <text class="doctor-satisfaction doctor-info-text">服务满意度：暂无</text>
     </view>
 </view>
+
+<view class="doctor-introduction-container">
+    <view class="bar">
+        <view class="box-left">
+            <image class="box-left__icon" src="../../images/introductionIcon.png" mode="widthFix" />
+            <view class="box-left__text">医师介绍</view>
+        </view>
+        <view class="box-right" bindtap="toggleFull">
+            <view class="box-right__text">{{ifShowFull == true ? '收起' : '查看全部'}}</view>
+            <view class="arrow"></view>
+        </view>
+    </view>
+    <text class="doctor-introduction{{ifShowFull == true ? ' full' : ''}}">邬元曦，成都中医药大学中医学硕士。师从知名中医妇科专家吴克明教授，攻读临床硕士学位，擅长处理痛经、多囊卵巢综合征、卵巢早衰、围绝经期综合征、女性不孕症等疾病，以妇科生殖内分泌作为主要研究方向。</text>
+</view>
+
+<view class="consult-container">
+    <view class="bar">
+        <view class="box-left">
+            <image class="consult-icon box-left__icon" src="../../images/consultIcon.png" mode="widthFix" />
+            <view class="box-left__text">我要咨询</view>
+        </view>
+    </view>
+    <textarea class="consult-input" placeholder="请尽量详细描述您的症状，便于医生更准确的解答~"></textarea>
+</view>
+
+<button class="submit" type="defualt" bindtap="submit">
+    提交
+</button>
