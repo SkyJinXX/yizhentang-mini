@@ -44,8 +44,8 @@
     <view class="menu__item" style="background-image: url(https://i.loli.net/2019/05/12/5cd7ac05411ba.png);" alt="产后饮食" id="diet" bind:tap="navigateTo"></view>
     <view class="menu__item" style="background-image: url(https://i.loli.net/2019/05/12/5cd7ac04e995e.png);" alt="健康之声"></view>
     <view class="menu__item" style="background-image: url(https://i.loli.net/2019/05/12/5cd7ac0541984.png);" alt="有奖征集"></view>
-    <view class="menu__item" style="background-image: url(https://i.loli.net/2019/05/12/5cd7ac053718a.png);" alt="妈妈体质"></view>
-    <view class="menu__item" style="background-image: url(https://i.loli.net/2019/05/12/5cd7ac054277f.png);" alt="妈妈心情"></view>
+    <view class="menu__item" style="background-image: url(https://i.loli.net/2019/05/12/5cd7ac053718a.png);" alt="妈妈体质" id="constitution" bind:tap="navigateTo"></view>
+    <view class="menu__item" style="background-image: url(https://i.loli.net/2019/05/12/5cd7ac054277f.png);" alt="妈妈心情" id="mood" bind:tap="navigateTo"></view>
   </scroll-view>
 </view>
 

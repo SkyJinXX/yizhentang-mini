@@ -10,7 +10,9 @@
     "pages/class/class",
     "pages/officialAccount/officialAccount",
     "pages/store/store",
-    "pages/diet/diet"
+    "pages/diet/diet",
+    "pages/constitution/constitution",
+    "pages/mood/mood"
   ],
   "window": {
     "backgroundTextStyle": "light",

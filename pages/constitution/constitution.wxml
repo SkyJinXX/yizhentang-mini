@@ -1,0 +1,31 @@
+<view class="test-container" wx:if="{{!finished}}">
+    <view class="test">
+        <view style="width: 100%;">
+            <view class="question-container">
+                <text class="question-number">{{currentIndex + 1}}、</text>
+                <text class="question">{{test[currentIndex].question}}</text>
+            </view>
+            <radio-group class="answer-list">
+                <label class="answer-item">
+                    <text class="answer-text">A {{test[currentIndex].answer[0]}}</text>
+                    <radio value="0" color="#910000" checked="{{checked}}" />
+                </label>
+                <view class="line"></view>
+                <label class="answer-item">
+                    <text class="answer-text">B {{test[currentIndex].answer[1]}}</text>
+                    <radio value="0" color="#910000" checked="{{checked}}" />
+                </label>
+            </radio-group>
+        </view>
+        <button class="next" type="defualt" bindtap="next">
+            {{currentIndex == test.length - 1 ? '完成' : '下一题'}}
+        </button>
+    </view>
+    <view class="progress">{{currentIndex + 1}}/{{test.length}}</view>
+</view>
+
+<view class="result-container" wx:else>
+    <image class="result" mode="widthFix" src="../../images/constitution.jpg" />
+    <button class="save" bindtap="save"></button>
+    <button class="share" open-type="share"></button>
+</view>

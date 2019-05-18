@@ -13,6 +13,14 @@ Page({
     ifShowOA: false
   },
   onLoad: function () {
+    // wx.showShareMenu({
+    //   fail: e => {
+    //     console.log(e);
+    //   },
+    //   success: e => {
+    //     console.log(e);
+    //   }
+    // });
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,

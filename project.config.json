@@ -33,7 +33,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 6,
+			"current": 8,
 			"list": [
 				{
 					"id": -1,
@@ -81,6 +81,20 @@
 					"id": -1,
 					"name": "商城",
 					"pathName": "pages/store/store",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "体质",
+					"pathName": "pages/constitution/constitution",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "心情",
+					"pathName": "pages/mood/mood",
 					"scene": null
 				}
 			]
