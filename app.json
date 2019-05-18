@@ -9,8 +9,8 @@
     "pages/consult/consult",
     "pages/class/class",
     "pages/officialAccount/officialAccount",
-    "pages/store",
-    "pages/store/store"
+    "pages/store/store",
+    "pages/diet/diet"
   ],
   "window": {
     "backgroundTextStyle": "light",

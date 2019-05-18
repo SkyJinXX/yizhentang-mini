@@ -41,7 +41,7 @@
     <view class="menu__item" style="background-image: url(https://i.loli.net/2019/05/12/5cd7ac0542074.png);" alt="中医科普" id="officialAccount" bind:tap="navigateTo"></view>
     <view class="menu__item" style="background-image: url(https://i.loli.net/2019/05/12/5cd7ac0520922.png);" alt="妈妈课堂" id="class" bind:tap="navigateTo"></view>
     <view class="menu__item" style="background-image: url(https://i.loli.net/2019/05/12/5cd7ac05409fe.png);" alt="孕愈商城" id="store" bind:tap="navigateTo"></view>
-    <view class="menu__item" style="background-image: url(https://i.loli.net/2019/05/12/5cd7ac05411ba.png);" alt="产后饮食"></view>
+    <view class="menu__item" style="background-image: url(https://i.loli.net/2019/05/12/5cd7ac05411ba.png);" alt="产后饮食" id="diet" bind:tap="navigateTo"></view>
     <view class="menu__item" style="background-image: url(https://i.loli.net/2019/05/12/5cd7ac04e995e.png);" alt="健康之声"></view>
     <view class="menu__item" style="background-image: url(https://i.loli.net/2019/05/12/5cd7ac0541984.png);" alt="有奖征集"></view>
     <view class="menu__item" style="background-image: url(https://i.loli.net/2019/05/12/5cd7ac053718a.png);" alt="妈妈体质"></view>
