@@ -1,38 +1,4 @@
-page {
-    padding-top: 20rpx;
-    padding-bottom: 20rpx;
-}
-
-.input-row {
-    font-size: 30rpx;
-    margin: 0 20rpx 40rpx;
-}
-    .label {
-        display: block;
-        margin-bottom: 20rpx;
-    }
-        .important {
-            display: inline;
-            color: red;
-        }
-    .record-input {
-        padding: 30rpx;
-        background-color: rgb(247, 247, 247);
-    }
-    .record-radio-group {
-        display: flex;
-        flex-flow: row wrap;
-        padding-left: 30rpx;
-    }
-        .record-radio-label {
-            margin-right: 20rpx;
-            margin-bottom: 10rpx;
-            color: rgb(135, 135, 135)
-        }
-
-.submit {
-    margin: 40rpx;
-
-    background-color: #910000;
-    color: white;
+.entry {
+    display: block;
+    width: 100%;
 }

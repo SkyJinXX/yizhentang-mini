@@ -22,11 +22,8 @@ Page({
             }
         }
     },
-    submit: function () {
-        wx.showToast({
-            title: '提交成功',
-            icon: 'success',
-            duration: 2000
-        })
-    }
+    navigateTo: e => {
+      let pageSrc = `../${e.currentTarget.id}/${e.currentTarget.id}`;
+      wx.navigateTo({ url: pageSrc });
+    },
   })

@@ -22,17 +22,11 @@ Page({
             }
         }
     },
-    getUserInfo: function(e) {
-        console.log(e)
-        app.globalData.userInfo = e.detail.userInfo
-        this.setData({
-          userInfo: e.detail.userInfo,
-          hasUserInfo: true
+    submit: function () {
+        wx.showToast({
+            title: '提交成功',
+            icon: 'success',
+            duration: 2000
         })
-    },
-    navigateTo: e => {
-      let pageSrc = `../${e.currentTarget.id}/${e.currentTarget.id}`;
-      wx.navigateTo({ url: pageSrc });
-    },
+    }
   })
-  

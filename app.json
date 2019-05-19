@@ -12,7 +12,9 @@
     "pages/store/store",
     "pages/diet/diet",
     "pages/constitution/constitution",
-    "pages/mood/mood"
+    "pages/mood/mood",
+    "pages/diary/diary",
+    "pages/pvStore/pvStore"
   ],
   "window": {
     "backgroundTextStyle": "light",

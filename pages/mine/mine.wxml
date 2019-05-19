@@ -9,14 +9,14 @@
         <text class="point-value-text">可用积分</text>
         <view class="point-value-value">0</view>
     </view>
-    <view class="point-value-store">
+    <view class="point-value-store" id="pvStore" bindtap="navigateTo">
         <text class="point-value-text">积分商城</text>
         <view class="point-value-store-icon">></view>
     </view>
 </view>
 
 <view class="info-menu">
-    <view class="info-menu__item">
+    <view class="info-menu__item" id="record" bindtap="navigateTo">
         <view class="info-item-text">我的健康记录</view>
         <view class="info-item-arrow"></view>
     </view>

@@ -1,0 +1,105 @@
+<view class="input-row">
+    <text class="label"><text class="important">* </text>分娩日期：</text>
+    <input placeholder="请输入分娩日期" class="record-input" confirm-type="next"/>
+</view>
+<view class="input-row">
+    <text class="label"><text class="important">* </text>体重（kg）：</text>
+    <input placeholder="请输入今日体重" class="record-input" confirm-type="next"/>
+</view>
+<view class="input-row">
+    <text class="label">血压（mmHg）：</text>
+    <input placeholder="请输入今日血压，例如130/80" class="record-input" confirm-type="next"/>
+</view>
+<view class="input-row">
+    <text class="label">脉搏（次/分）：</text>
+    <input placeholder="请输入今日脉搏" class="record-input" confirm-type="next"/>
+</view>
+<view class="input-row">
+    <text class="label"><text class="important">* </text>饮食量：</text>
+    <radio-group class="record-radio-group">
+        <label class="record-radio-label">
+            <radio value="large" /> 较多
+        </label>
+        <label class="record-radio-label">
+            <radio value="middle" /> 一般
+        </label>
+        <label class="record-radio-label">
+            <radio value="small" /> 较少
+        </label>
+    </radio-group>
+</view>
+<view class="input-row">
+    <text class="label"><text class="important">* </text>大小便通畅否：</text>
+    <radio-group class="record-radio-group">
+        <label class="record-radio-label">
+            <radio value="true" /> 是
+        </label>
+        <label class="record-radio-label">
+            <radio value="false" /> 否
+        </label>
+    </radio-group>
+</view>
+<view class="input-row">
+    <text class="label"><text class="important">* </text>小腹疼痛否：</text>
+    <radio-group class="record-radio-group">
+        <label class="record-radio-label">
+            <radio value="true" /> 是
+        </label>
+        <label class="record-radio-label">
+            <radio value="false" /> 否
+        </label>
+    </radio-group>
+</view>
+<view class="input-row">
+    <text class="label"><text class="important">* </text>产后宫缩疼痛否：</text>
+    <radio-group class="record-radio-group">
+        <label class="record-radio-label">
+            <radio value="true" /> 是
+        </label>
+        <label class="record-radio-label">
+            <radio value="false" /> 否
+        </label>
+    </radio-group>
+</view>
+<view class="input-row">
+    <text class="label"><text class="important">* </text>乳汁量（ml）：</text>
+    <input placeholder="请输入今日乳汁量" class="record-input" confirm-type="next"/>
+</view>
+<view class="input-row">
+    <text class="label"><text class="important">* </text>恶露量：</text>
+    <radio-group class="record-radio-group">
+        <label class="record-radio-label">
+            <radio value="large" /> 量较多
+        </label>
+        <label class="record-radio-label">
+            <radio value="middle" /> 中量
+        </label>
+        <label class="record-radio-label">
+            <radio value="small" /> 少量
+        </label>
+        <label class="record-radio-label">
+            <radio value="none" /> 较为干净
+        </label>
+    </radio-group>
+</view>
+<view class="input-row">
+    <text class="label"><text class="important">* </text>恶露性状：</text>
+    <radio-group class="record-radio-group">
+        <label class="record-radio-label">
+            <radio value="red" /> 呈鲜红色
+        </label>
+        <label class="record-radio-label">
+            <radio value="pink" /> 呈粉红或带点褐色
+        </label>
+        <label class="record-radio-label">
+            <radio value="yellow" /> 呈褐色或黄色
+        </label>
+        <label class="record-radio-label">
+            <radio value="white" /> 呈白色或透明
+        </label>
+    </radio-group>
+</view>
+
+<button class="submit" type="defualt" bindtap="submit">
+    马上提交
+</button>
