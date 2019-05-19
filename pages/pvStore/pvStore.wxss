@@ -6,7 +6,7 @@ page {
     /* box-sizing: border-box; */
     /* padding: 40rpx; */
     
-    background-color: #f4f4f4;
+    background-color: #efeef4;
 }
 
 
