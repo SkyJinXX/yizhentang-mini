@@ -34,5 +34,19 @@ Page({
       let pageSrc = `../${e.currentTarget.id}/${e.currentTarget.id}`;
       wx.navigateTo({ url: pageSrc });
     },
+    showOrder: e => {
+      wx.showModal({
+        title: '提示',
+        content: '暂无订单',
+        showCancel: false,
+        success(res) {
+          if (res.confirm) {
+            console.log('用户点击确定')
+          } else if (res.cancel) {
+            console.log('用户点击取消')
+          }
+        }
+      })
+    }
   })
   

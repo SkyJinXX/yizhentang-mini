@@ -20,11 +20,11 @@
         <view class="info-item-text">我的健康记录</view>
         <view class="info-item-arrow"></view>
     </view>
-    <view class="info-menu__item">
+    <view class="info-menu__item" id="chart" bindtap="navigateTo">
         <view class="info-item-text">统计图表</view>
         <view class="info-item-arrow"></view>
     </view>
-    <view class="info-menu__item">
+    <view class="info-menu__item" bindtap="showOrder">
         <view class="info-item-text">我的订单</view>
         <view class="info-item-arrow"></view>
     </view>

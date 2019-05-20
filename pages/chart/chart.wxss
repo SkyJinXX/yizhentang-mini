@@ -1,0 +1,18 @@
+page {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    /* box-sizing: border-box; */
+    /* padding: 40rpx; */
+    
+    background-color: #efeef4;
+}
+
+
+.chart {
+    /* margin-bottom: 20rpx;  */
+    width: 100%;
+    display: block;
+    margin-bottom: 20rpx;
+}
