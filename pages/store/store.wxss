@@ -18,7 +18,7 @@ page {
     margin-bottom: 60rpx;
 }
     .title {
-        width: 601rpx;
+        width: 380rpx;
     }
 .commodity {
     margin-bottom: 20rpx; 

@@ -1,3 +1,8 @@
+page {
+  /* height: 100%; */
+  padding-bottom: 20rpx;
+}
+
 .dumai-intro {
     width: 100%;
     margin-bottom: 20rpx;
@@ -29,8 +34,8 @@
             color: rgb(135, 135, 135)
         }
 .submit {
-    margin: 40rpx 40rpx 0;
-
+    margin: 40rpx 40rpx 70rpx;
+    /* padding-bottom: 40rpx; */
     background-color: #910000;
     color: white;
 }

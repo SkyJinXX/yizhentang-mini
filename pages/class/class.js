@@ -6,10 +6,17 @@ Page({
 
   },
   submit: function () {
-    wx.showToast({
-      title: '报名成功',
-      icon: 'success',
-      duration: 2000
+    wx.showModal({
+      title: '敬请期待',
+      content: '下次报名开放时间为6月5日',
+      showCancel: false,
+      success(res) {
+        if (res.confirm) {
+          console.log('用户点击确定')
+        } else if (res.cancel) {
+          console.log('用户点击取消')
+        }
+      }
     })
   }
 })

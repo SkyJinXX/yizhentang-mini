@@ -15,12 +15,13 @@
     "pages/mood/mood",
     "pages/diary/diary",
     "pages/pvStore/pvStore",
-    "pages/chart/chart"
+    "pages/chart/chart",
+    "pages/reward/reward"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "一针塘",
+    "navigationBarTitleText": "e蒸孕愈",
     "navigationBarTextStyle": "black",
     "backgroundColor": "#000"
   },
