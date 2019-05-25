@@ -16,7 +16,9 @@
     "pages/diary/diary",
     "pages/pvStore/pvStore",
     "pages/chart/chart",
-    "pages/reward/reward"
+    "pages/reward/reward",
+    "pages/feedback/feedback",
+    "pages/customerServices/customerServices"
   ],
   "window": {
     "backgroundTextStyle": "light",

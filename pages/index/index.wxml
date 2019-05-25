@@ -63,9 +63,10 @@
   </view>
 </view>
 
-<view class="authorize-background" wx:if="{{!hasUserInfo && canIUse}}">
+<view class="authorize-background" wx:if="{{!hasUserInfo && canIUse && ifShowAuth}}" bindtap="closeAuth">
   <view class="authorize-modal">
-    <text class="authorize-text">给老娘授权</text>
+    <text class="authorize-title">申请授权</text>
+    <text class="authorize-text">小程序需要获取您的公开信息</text>
     <button open-type="getUserInfo" bindgetuserinfo="getUserInfo" class="authorize-button">授权</button>
   </view>
 </view>

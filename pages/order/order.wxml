@@ -28,22 +28,22 @@
         <text class="label"><text class="important">* </text>确定医生：</text>
         <radio-group class="record-radio-group">
             <label class="record-radio-label">
-                <radio value="0" /> 匡泽红
+                <radio value="0"  color="#910000"/> 匡泽红
             </label>
             <label class="record-radio-label">
-                <radio value="1" /> 邬元曦
+                <radio value="1"  color="#910000"/> 邬元曦
             </label>
             <label class="record-radio-label">
-                <radio value="2" /> 周晓凤
+                <radio value="2"  color="#910000"/> 周晓凤
             </label>
             <label class="record-radio-label">
-                <radio value="3" /> 潘珍珍
+                <radio value="3"  color="#910000"/> 潘珍珍
             </label>
             <label class="record-radio-label">
-                <radio value="4" /> 劳幼红
+                <radio value="4"  color="#910000"/> 劳幼红
             </label>
             <label class="record-radio-label">
-                <radio value="5" /> 朱勤
+                <radio value="5"  color="#910000"/> 朱勤
             </label>
         </radio-group>
     </view>
@@ -51,7 +51,7 @@
         <text class="label"><text class="important">* </text>确定地点：</text>
         <radio-group class="record-radio-group">
             <label class="record-radio-label">
-                <radio value="0" /> 杭州一真堂中西医结合门诊部
+                <radio value="0"  color="#910000"/> 杭州一真堂中西医结合门诊部
             </label>
         </radio-group>
     </view>
@@ -59,7 +59,7 @@
         <text class="label"><text class="important">* </text>挂号费：</text>
         <radio-group class="record-radio-group">
             <label class="record-radio-label">
-                <radio value="0" /> ￥20.00
+                <radio value="0"  color="#910000"/> ￥20.00
             </label>
         </radio-group>
     </view>
@@ -67,6 +67,48 @@
         立即预约
     </button>
 </view>
+
+<view class="community-container" wx:if="{{status=='community'}}">
+    <view class="input-row">
+        <text class="label"><text class="important">* </text>姓名：</text>
+        <input placeholder="请输入姓名" class="record-input" confirm-type="next" />
+    </view>
+    <view class="input-row">
+        <text class="label"><text class="important">* </text>时间：</text>
+        <input placeholder="请输入预约时间" class="record-input" confirm-type="next" />
+    </view>
+    <view class="input-row">
+        <text class="label"><text class="important">* </text>确定地点：</text>
+        <radio-group class="record-radio-group">
+            <label class="record-radio-label">
+                <radio value="0"  color="#910000"/> 杭州胡庆余堂第三中医门诊部
+            </label>
+            <label class="record-radio-label">
+                <radio value="1"  color="#910000"/> 浙江省中医药大学名医馆
+            </label>
+            <label class="record-radio-label">
+                <radio value="2"  color="#910000"/> 浙江省中医药学会门诊部
+            </label>
+            <label class="record-radio-label">
+                <radio value="3"  color="#910000"/> 浙江省中西医结合医院
+            </label>
+            <label class="record-radio-label">
+                <radio value="4"  color="#910000"/> 绍兴市柯桥区中医院
+            </label>
+            <label class="record-radio-label">
+                <radio value="5"  color="#910000"/> 华东医药汤养元国医馆
+            </label>
+            <label class="record-radio-label">
+                <radio value="6"  color="#910000"/> 宁波市江北区慈城社区卫生服务中心
+            </label>
+        </radio-group>
+    </view>
+    <button class="submit" type="defualt" bindtap="order">
+        立即预约
+    </button>
+</view>
+
+
 
 <view class="on-site-container" wx:if="{{status=='on-site'}}">
     <view class="basic-rules-container">

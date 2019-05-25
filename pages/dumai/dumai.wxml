@@ -3,13 +3,13 @@
     <text class="label"><text class="important">* </text>预约选择：</text>
     <radio-group class="record-radio-group">
         <label class="record-radio-label">
-            <radio value="dumai" /> 督脉熏蒸
+            <radio value="dumai"  color="#910000"/> 督脉熏蒸
         </label>
         <label class="record-radio-label">
-            <radio value="tuina" /> 推拿
+            <radio value="tuina" color="#910000" /> 推拿
         </label>
         <label class="record-radio-label">
-            <radio value="zhenjiu" /> 针灸
+            <radio value="zhenjiu" color="#910000" /> 针灸
         </label>
     </radio-group>
 </view>

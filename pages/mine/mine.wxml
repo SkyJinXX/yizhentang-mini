@@ -28,11 +28,11 @@
         <view class="info-item-text">我的订单</view>
         <view class="info-item-arrow"></view>
     </view>
-    <view class="info-menu__item">
+    <view class="info-menu__item" id="customerServices" bindtap="navigateTo">
         <view class="info-item-text">咨询与售后</view>
         <view class="info-item-arrow"></view>
     </view>
-    <view class="info-menu__item">
+    <view class="info-menu__item" id="feedback" bindtap="navigateTo">
         <view class="info-item-text">我要反馈</view>
         <view class="info-item-arrow"></view>
     </view>

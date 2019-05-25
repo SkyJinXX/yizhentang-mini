@@ -5,12 +5,13 @@ const app = getApp()
 Page({
   data: {
     imgUrls: [
-      '../../images/dumaiEntry.png',
-      '../../images/healthEntry.png'
+      '../../images/dumaiEntry.jpg',
+      '../../images/healthEntry.jpg'
     ],
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
-    ifShowOA: false
+    ifShowOA: false,
+    ifShowAuth: true
   },
   onLoad: function () {
     // wx.showShareMenu({
@@ -57,6 +58,11 @@ Page({
   closeOA: function (e) {
     this.setData({
       ifShowOA: false
+    })
+  },
+  closeAuth: function (e) {
+    this.setData({
+      ifShowAuth: false
     })
   },
   oaError: e => {

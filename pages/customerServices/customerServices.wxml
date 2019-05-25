@@ -1,0 +1,16 @@
+<scroll-view class="dialog" scroll-y>
+    <view class="timestamp">{{timestamp}}</view>
+    <view class="message-container">
+        <image class="avatar" mode="widthFix" src="../../images/logo.jpg" />
+        <text class="message">您好，这里是用户服务中心，请问对购买的商品有什么问题呢？有什么可以帮助您的呢？</text>
+    </view>
+    <view class="message-container message-container--user" wx:for="{{messages}}">
+        <image class="avatar" mode="widthFix" src="{{userInfo.avatarUrl}}" />
+        <text class="message">{{item}}</text>
+    </view>
+</scroll-view>
+
+<view class="input-bar">
+    <input class="input" type="text" confirm-type="done" bindinput="getInput" value="{{text}}" placeholder="请在此输入"/>
+    <button class="send"  bindtap="addToMessages">发送</button>
+</view>

@@ -1,6 +1,7 @@
 Page({
   data: {
-    ifShowFull: false
+    ifShowFull: false,
+    text: ''
   },
   onLoad: function (options) {
 
@@ -11,11 +12,19 @@ Page({
     })
   },
   submit: function () {
-    wx.showToast({
-      title: '提交成功',
-      icon: 'success',
-      duration: 2000
-    })
+    if (this.data.text) {
+      wx.showToast({
+        title: '提交成功',
+        icon: 'success',
+        duration: 2000
+      })
+    } else {
+      wx.showToast({
+        title: '请输入咨询内容',
+        icon: 'none',
+        duration: 2000
+      })
+    }
   },
   choose: function () {
     wx.showToast({
@@ -23,5 +32,8 @@ Page({
       icon: 'none',
       duration: 2000
     })
+  },
+  getInput: function (e) {
+    this.data.text = e.detail.value;
   }
 })

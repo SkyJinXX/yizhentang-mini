@@ -33,7 +33,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 9,
+			"current": 10,
 			"list": [
 				{
 					"id": -1,
@@ -102,6 +102,13 @@
 					"id": -1,
 					"name": "日记",
 					"pathName": "pages/diary/diary",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "反馈",
+					"pathName": "pages/feedback/feedback",
 					"scene": null
 				}
 			]

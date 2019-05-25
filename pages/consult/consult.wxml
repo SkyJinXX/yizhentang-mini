@@ -40,7 +40,7 @@
             <view class="box-left__text">我要咨询</view>
         </view>
     </view>
-    <textarea class="consult-input" placeholder="请尽量详细描述您的症状，便于医生更准确的解答~"></textarea>
+    <textarea class="consult-input" placeholder="请尽量详细描述您的症状，便于医生更准确的解答~" bindinput="getInput"></textarea>
 </view>
 
 <button class="submit" type="defualt" bindtap="submit">

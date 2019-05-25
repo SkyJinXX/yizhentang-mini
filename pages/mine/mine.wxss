@@ -43,7 +43,7 @@
     height: 106rpx;
     line-height: 128rpx;
     color: #000;
-    font-size: 32rpx;
+    font-size: 34rpx;
   }
 /*
 .......##..............########...#######..####.##....##.########....##.....##....###....##.......##.....##.########....................##
@@ -65,7 +65,7 @@
     margin-right: 100rpx;
   }
     .point-value-text {
-      font-size: 30rpx;
+      font-size: 34rpx;
       margin-bottom: 20rpx;
       display: block;
       line-height: 32rpx;
@@ -107,7 +107,7 @@
     border-top: 1px solid rgb(206, 202, 202);
   }
     .info-item-text {
-      font-size: 28rpx;
+      font-size: 34rpx;
     }
     .info-item-arrow{
 

@@ -1,0 +1,84 @@
+page {
+    display: flex;
+    flex-flow: column;
+
+    height: 100%;
+}
+
+
+.dialog {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 40rpx 20rpx;
+    box-sizing: border-box;
+
+    height: 300rpx;
+    flex-grow: 1;
+    background-color: #f4f4f4;
+}
+    .timestamp {
+        color: #d8d8d8;
+        font-size: 28rpx;
+        margin-bottom: 30rpx;
+        text-align: center;
+    }
+    .message-container {
+        display: flex;
+        flex-flow: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        align-self: flex-start;
+        margin-bottom: 30rpx;
+    }
+        .avatar {
+            display: block;
+            width: 80rpx;
+            border-radius: 50%;
+        }
+        .message {
+            display: block;
+            background-color: white;
+            font-size: 34rpx;
+            padding: 20rpx;
+            max-width: 450rpx;
+            border-radius: 20rpx;
+
+            margin: 0 20rpx;
+
+            word-break: break-all;
+        }
+    .message-container--user {
+        flex-flow: row-reverse;
+        align-self: flex-end;
+    }
+
+.input-bar {
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 14rpx 26rpx;
+    box-sizing: border-box;
+
+    height: 100rpx;
+}
+    .input {
+        flex-grow: 1;
+        background-color: #f4f4f4;
+        border-radius: 10rpx;
+        font-size: 34rpx;
+        padding-left: 16rpx;
+        height: 100%;
+    }
+    .send {
+        background-color: #910000;
+        color: white;
+        font-size: 34rpx;
+        line-height: 72rpx;
+        height: 100%;
+        margin: 0 0 0 20rpx;
+        border-radius: 10rpx;
+    }
